@@ -1,0 +1,76 @@
+.n-wrapper {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  z-index: 1;
+}
+
+.n-left {
+  flex: 1;
+  align-items: center;
+  justify-content: left;
+  display: flex;
+  padding-left: .5rem;
+  gap: .3rem;
+}
+
+.n-name {
+  font-size: .9rem;
+  font-family:'Lucida Handwriting';
+  color: #071566;
+}
+
+.n-right {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  font-weight: 300;
+}
+
+.n-list > ul {
+  display: flex;
+  gap: 1.7rem;
+  margin: 0 2rem;
+}
+.n-list > ul li {
+  color: #071566ce;
+  font-size: .8rem;
+}
+
+.n-list > ul li:hover {
+  color: #852176ad;
+  cursor: pointer;
+}
+
+.n-button {
+  flex: 1;
+  margin-right: .3rem;
+}
+
+/* mobile menu */
+
+
+
+@media screen and (max-width: 1000px) {
+  .n-wrapper {
+    height: 8vh;
+  }
+  .n-name{
+    font-size: .8rem;
+  }
+  .n-list {
+    display: none;
+  }
+  .n-button {
+    display: none;
+  }
+  .mob-toggle {
+    display: block;
+  }
+
+}
+

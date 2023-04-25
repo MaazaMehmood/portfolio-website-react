@@ -1,0 +1,44 @@
+:root
+{
+  --yellow: #20366b;
+  /* #F5C32C; */
+    --orange : #130852;
+    /* #FCA61F; */
+    --black : #1b2236;
+    --gray : #8a8b8e;
+    --blueCard : #fce2f5;
+    --purple: #ffe79a;
+    --boxShadow : 0px 19px 60px rgba(0, 0, 0, 0.137);
+    --orangeCard: #ef5a5a;
+    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+}
+
+.App{
+    padding: 0.2rem 0;
+    overflow: hidden;
+    color: var(--black);    
+}
+
+.button {
+    background: linear-gradient(180deg, #f7ce97 26.71%, #f5b157 99.36%);
+    border-radius: 34px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 11px 26px 11px 26px;
+    gap: 1rem;
+  }
+  
+  .button:hover {
+    font-weight: bold;
+    cursor: pointer;
+  }
+  @media screen and (max-width: 480px) {
+    .App {
+      padding: 0.5rem 0;
+    }
+  }
+
+  
+
+  
