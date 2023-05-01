@@ -16,12 +16,14 @@ const Portfolio = () => {
   return (
     <div className="portfolio" id="portfolio">
       {/* heading */}
-      <span style={{color: darkMode?'white': ''}}>Recent Projects</span>
-      <span>Portfolio</span>
+      <div className="portfolio-head">
+        <span style={{color: darkMode?'white': ''}}>Recent Projects</span>
+        <span>Portfolio</span>
+      </div>
 
       {/* slider */}
       <Swiper
-        spaceBetween={40}
+        spaceBetween={10}
         slidesPerView={3}
         grabCursor={true}
         className="portfolio-slider"

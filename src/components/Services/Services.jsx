@@ -3,7 +3,7 @@ import "./Services.css";
 import Card from "../Card/Card";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
-import Resume from './resume.pdf';
+import Resume from "./resume.pdf";
 
 const Services = () => {
   // context
@@ -18,16 +18,15 @@ const Services = () => {
 
   return (
     <div className="services" id="services">
-
       {/* right */}
       <div className="awesome">
-        <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
-        <span>services</span>
-        <spane>
+        <span style={{ color: darkMode ? "white" : "" }}>My </span>
+        <span>Services</span>
+        <span>
           Lorem ispum is simpley dummy text of printing of printing Lorem
           <br />
           ispum is simpley dummy text of printing
-        </spane>
+        </span>
         <a href={Resume} download>
           <motion.button className="button s-button"
            initial={{x: '100vw'}}
@@ -35,11 +34,10 @@ const Services = () => {
            transition={transition}
            whileHover={{scale: 1.1}}
           >
-            Download CV
+            Resume
           </motion.button>
         </a>
       </div>
-
 
       {/* left side */}
       <div className="cards">
@@ -56,7 +54,7 @@ const Services = () => {
         </motion.div>
         {/* second card */}
         <motion.div
-          initial={{ left: "-4rem", top: "8rem" }}
+          initial={{ left: "-2rem", top: "7rem" }}
           whileInView={{ left: "-1rem" }}
           transition={transition}
         >
@@ -79,8 +77,11 @@ const Services = () => {
             color="rgba(252, 166, 31, 0.45)"
           />
         </motion.div>
+        <motion.p  initial={{y: '70vh'}}
+        whileInView={{y: 0}}
+        transition={transition}
+        >Services</motion.p>
       </div>
-    
     </div>
   );
 };

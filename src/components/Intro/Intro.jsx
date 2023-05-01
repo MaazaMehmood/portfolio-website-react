@@ -26,7 +26,7 @@ const Intro = () => {
       <div className="i-left">
         <div className="i-name" >
           <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
-          <motion.span transition={transition} whileHover={{scale:1.1}}>
+          <motion.span transition={transition}>
             MAAZA MEHMOOD
           </motion.span>
           <motion.span transition={transition} whileHover={{scale:1.1}}>

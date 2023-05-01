@@ -2,6 +2,7 @@ import React, { useContext, useRef, useState } from "react";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
 import { themeContext } from "../../Context";
+import { motion, useTransform, useViewportScroll } from "framer-motion";
 
 
 const Contact = () => {
@@ -34,15 +35,11 @@ const Contact = () => {
   return (
     <div className="contact-form" id="contact">
       {/* left side copy and paste from work section */}
-      <div className="w-left">
-        <div className="awesome">
+      <div className="left">
+        <div className="info">
           {/* darkMode */}
           <span style={{color: darkMode?'white': ''}}>Get in Touch</span>
-          <span style={{fontSize: '30px'}}>Contact me</span>
-          <div
-            className="blur s-blur1"
-            style={{ background: "#ABF1FF94" }}
-          ></div>
+          <span >Contact me</span>
         </div>
       </div>
       {/* right side form */}
@@ -51,7 +48,11 @@ const Contact = () => {
           <input type="text" name="user_name" className="user"  placeholder="Name"/>
           <input type="email" name="user_email" className="user" placeholder="Email"/>
           <textarea name="message" className="user" placeholder="Message"/>
-          <input type="submit" value="Send" className="button"/>
+          <motion.input type="submit" value="Send" className="button" 
+          initial={{x: '-100vw'}}
+          animate={{x: 0}}
+          transition={{duration: 1, type: "spring", stiffness: 50}}
+          whileHover={{scale: 1.1}}/>
           <span>{done && "Thanks for Contacting me"}</span>
         </form>
       </div>

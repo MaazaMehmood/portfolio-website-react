@@ -2,9 +2,12 @@ import React from "react";
 import "./Testimonial.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-
 import { Pagination } from "swiper";
 import "swiper/css/pagination";
+import Sidebar from "../../img/sidebar.png";
+import Ecommerce from "../../img/ecommerce.png";
+import HOC from "../../img/hoc.png";
+import MusicApp from "../../img/musicapp.png";
 import profilePic1 from "../../img/profile1.jpg";
 import profilePic2 from "../../img/profile2.jpg";
 import profilePic3 from "../../img/profile3.jpg";
@@ -40,8 +43,6 @@ const Testimonial = () => {
         <span>Clients always get </span>
         <span>Exceptional Work </span>
         <span>from me...</span>
-        <div className="blur t-blur1" style={{ background: "var(--purple)" }}></div>
-        <div className="blur t-blur2" style={{ background: "skyblue" }}></div>
       </div>
       
       <Swiper
@@ -49,8 +50,21 @@ const Testimonial = () => {
         modules={[Pagination]}
         slidesPerView={1}
         pagination={{ clickable: true }}
+        className="testimonial"
       >
-        {clients.map((client, index) => {
+        <SwiperSlide >
+          <img src={Sidebar} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Ecommerce} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={MusicApp} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={HOC} alt="" />
+        </SwiperSlide>
+        {/* {clients.map((client, index) => {
           return (
             <SwiperSlide key={index}>
               <div className="testimonial">
@@ -59,7 +73,7 @@ const Testimonial = () => {
               </div>
             </SwiperSlide>
           );
-        })}
+        })} */}
       </Swiper>
     </div>
   );

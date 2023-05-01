@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import "./Works.css";
+import Card from "../Card/Card";
 import Upwork from "../../img/Upwork.png";
 import Fiverr from "../../img/fiverr.png";
 import Amazon from "../../img/amazon.png";
@@ -7,24 +8,48 @@ import Shopify from "../../img/Shopify.png";
 import Facebook from "../../img/Facebook.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
-import {Link} from 'react-scroll'
+import {Link} from 'react-scroll';
+
+
+
 const Works = () => {
   // context
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.1,
+        staggerChildren: 0.1
+      }
+    }
+  }
+    
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1
+    }
+  }
+
   // transition
   return (
     <div className="works" id="works">
+
       {/* left side */}
       <div className="w-left">
-        <div className="awesome">
+        {/* <div className="awesome"> */}
           {/* dark Mode */}
           <span style={{ color: darkMode ? "white" : "" }}>
-            Works for All these
+            Work for 
           </span>
-          <span>Brands & Clients</span>
-          <spane>
+          <span> Companies & Clients</span>
+          {/* <span>
             Lorem ispum is simpley dummy text of printing of printing Lorem
             <br />
             ispum is simpley dummy text of printingLorem ispum is simpley dummy
@@ -33,20 +58,55 @@ const Works = () => {
             y dummy text of printingLorem
             <br />
             ispum is simpley dummy text of printing
-          </spane>
+          </span>
           <Link to="contact" smooth={true} spy={true}>
             <button className="button s-button">Hire Me</button>
           </Link>
           <div
             className="blur s-blur1"
             style={{ background: "#ABF1FF94" }}
-          ></div>
-        </div>
+          ></div> */}
+        {/* </div> */}
       </div>
 
       {/* right side */}
-      <div className="w-right">
-        <motion.div
+      <motion.div className="w-right" 
+      variants={container}
+      initial="hidden"
+      whileInView="visible">
+        <motion.div className="div" style={{width: '30%'}}
+        variants={item}>
+          <h2>company 1</h2>
+          <div className="desc">
+            <p>Lorem ispum is simpley dummy text of printing of printing Lorem  dkjcdvs vdvnjkds</p>
+            <a><p>certificate</p></a>
+          </div>
+        </motion.div>
+        <motion.div className="div" style={{width: '50%'}}
+        variants={item}>
+          <h2>company 2</h2>
+          <div className="desc">
+            <p>Lorem ispum is simpley dummy text of printing of printing Lorem jvjs ldjvsdvd</p>
+            <a><p>certificate</p></a>
+          </div>
+        </motion.div>
+        <motion.div className="div" style={{width: '50%'}}
+        variants={item}>
+          <h2>company 3</h2>
+          <div className="desc">
+            <p>Lorem ispum is simpley dummy text of printing of printing Loremnd kvnj dvdkvnkdsj</p>
+            <a><p>certificate</p></a>
+          </div>
+        </motion.div>
+        <motion.div className="div" style={{width: '30%'}}
+        variants={item}>
+          <h2>company 4</h2>
+          <div className="desc">
+            <p>Lorem ispum is simpley dummy text of printing of printing Lorem asjkasf</p>
+            <a><p>certificate</p></a>
+          </div>
+        </motion.div>
+        {/* <motion.div
           initial={{ rotate: 45 }}
           whileInView={{ rotate: 0 }}
           viewport={{ margin: "-40px" }}
@@ -68,11 +128,11 @@ const Works = () => {
           <div className="w-secCircle">
             <img src={Facebook} alt="" />
           </div>
-        </motion.div>
+        </motion.div> */}
         {/* background Circles */}
-        <div className="w-backCircle blueCircle"></div>
+        {/* <div className="w-backCircle blueCircle"></div> */}
         {/* <div className="w-backCircle yellowCircle"></div> */}
-      </div>
+      </motion.div>
     </div>
   );
 };

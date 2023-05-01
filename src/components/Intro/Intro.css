@@ -18,7 +18,7 @@
   height: 100%;
   width: 100%;
   background: rgba(40, 40, 40, 0.918);
-  opacity: 0.6;
+  opacity: 0.5;
   z-index: -1;
 }
 
@@ -51,19 +51,16 @@
   opacity: 0;
   color:white;
   font-weight: bold;
-  font-family: 'Courier New' ;
+  font-family: 'Courier New';
   font-size: 1rem;
-  animation-delay: .5s;
-  
 }
 .i-name > :nth-child(2) {
   opacity: 0;
   color: #f189bd5b;
   font-weight: lighter;
-  font-family: 'Courier New' ;
+  font-family: 'Courier New';
   letter-spacing: .2rem;
   font-size:3rem;
-  animation-delay: 1.3s
 }
 .i-name > :nth-child(3) {
   opacity: 0;
@@ -74,15 +71,16 @@
   margin-left: 5px;
   align-items: center;
   text-align: left;
-  animation-delay: 2s;
 }
 .i-button {
   width: 6rem;
   height: 2rem;
   margin-top: 1rem;
+  margin-left: .3rem;
 }
 .i-icons {
-  margin-top: .5rem;
+  margin-top: .3rem;
+  margin-left: .5rem;
   display: flex;
   justify-content: left;
   gap: 3rem;

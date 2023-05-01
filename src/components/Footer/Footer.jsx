@@ -1,20 +1,32 @@
 import React from "react";
 import "./Footer.css";
-import Wave from "../../img/wave.png";
-import Insta from "@iconscout/react-unicons/icons/uil-instagram";
-import Facebook from "@iconscout/react-unicons/icons/uil-facebook";
-import Gitub from "@iconscout/react-unicons/icons/uil-github";
+import { FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { motion } from "framer-motion";
+
 
 const Footer = () => {
   return (
     <div className="footer">
-      <img src={Wave} alt="" style={{ width: "100%" }} />
       <div className="f-content">
-        <span>Zainkeepscode@gmail.com</span>
+        <motion.span
+        transition={{duration: 1, type: "spring", stiffness: 50, yoyo:Infinity}}
+        whileHover={{scale:1.1}}>Email at: maazamehmood24@gmail.com</motion.span>
         <div className="f-icons">
-          <Insta color="white" size={"3rem"} />
-          <Facebook color="white" size={"3rem"} />
-          <Gitub color="white" size={"3rem"} />
+          <motion.div className="i-icons"
+          initial={{y: '10vw'}}
+          animate={{y: 0}}
+          transition={{ duration:1 , type: 'spring', stiffness: 50}}
+          >
+            <a href="https://www.instagram.com" target="blank">
+              <FaInstagram />
+            </a>
+            <a href="https://www.linkedin.com" target="blank">
+              <FaLinkedin />
+            </a>
+            <a href="https://www.github.com" target="blank">
+              <FaGithub />
+            </a>
+          </motion.div>
         </div>
       </div>
     </div>

@@ -20,12 +20,14 @@ const Navbar = () => {
     setMenu(!showMenu)
   }
 
+  const transition = { duration: 1, type: "spring", stiffness: 50}
+
   return (
     <div className="n-wrapper" id="Navbar">
 
       {/* left */}
       <div className="n-left">
-        <Toggle />
+        {/* <Toggle /> */}
         <div 
         style={{ color: darkMode ? "white" : "" }} 
         className="n-name">PORTFOLIO</div>
@@ -35,37 +37,33 @@ const Navbar = () => {
       <div className="n-right">
         {/* <button className="mob-toggle" onClick={toggleMenu}>menu</button> */}
         <div className="n-list">
-          <motion.ul style={{ listStyleType: "none" }}
-          //  initial={{x: '100vw'}}
-          //  animate={{x: 0}}
-          //  transition={{ type: 'spring', stiffness: 50}}
-          >
-            <motion.li whileHover={{scale: 1.2}} >
+          <motion.ul style={{ listStyleType: "none" }}>
+            <motion.li whileHover={{scale: 1.2}}  transition={transition}>
               <Link activeClass="active" to="Navbar" spy={true} smooth={true}>
                 Home
               </Link>
             </motion.li>
-            <motion.li whileHover={{scale: 1.2}} >
+            <motion.li whileHover={{scale: 1.2}} transition={transition}>
               <Link to="services" spy={true} smooth={true}>
                 Serivces
               </Link>
             </motion.li>
-            <motion.li whileHover={{scale: 1.2}} >
+            <motion.li whileHover={{scale: 1.2}} transition={transition} >
+              <Link to="works" spy={true} smooth={true}>
+                Work
+              </Link>
+            </motion.li>
+            <motion.li whileHover={{scale: 1.2}} transition={transition}>
               <Link to="experience" spy={true} smooth={true}>
                 Experience
               </Link>
             </motion.li>
-            <motion.li whileHover={{scale: 1.2}} >
-              <Link to="portfolio" spy={true} smooth={true}>
-                Protfolio
-              </Link>
-            </motion.li>
-            <motion.li whileHover={{scale: 1.2}} >
+            <motion.li whileHover={{scale: 1.2}} transition={transition}>
               <Link to="testimonial" spy={true} smooth={true}>
-                Testimonial
+                Project
               </Link>
             </motion.li>
-            <motion.li whileHover={{scale: 1.2}} >
+            <motion.li whileHover={{scale: 1.2}} transition={transition} >
               <Link to="contact" spy={true} smooth={true}>
                 Contact
               </Link>
