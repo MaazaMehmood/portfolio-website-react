@@ -1,15 +1,13 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import "./Works.css";
-import Card from "../Card/Card";
-import Upwork from "../../img/Upwork.png";
-import Fiverr from "../../img/fiverr.png";
-import Amazon from "../../img/amazon.png";
-import Shopify from "../../img/Shopify.png";
-import Facebook from "../../img/Facebook.png";
 import { themeContext } from "../../Context";
-import { motion } from "framer-motion";
+import { motion, useSpring } from "framer-motion";
 import {Link} from 'react-scroll';
-
+import { FaLaptop, FaLaptopCode } from 'react-icons/fa';
+import { FaLaptopHouse } from 'react-icons/fa';
+import { FaCode } from 'react-icons/fa';
+import { FaDatabase } from 'react-icons/fa';
+import { FaBriefcase } from 'react-icons/fa';
 
 
 const Works = () => {
@@ -27,8 +25,7 @@ const Works = () => {
         staggerChildren: 0.1
       }
     }
-  }
-    
+  }  
   const item = {
     hidden: { y: 20, opacity: 0 },
     visible: {
@@ -37,36 +34,16 @@ const Works = () => {
     }
   }
 
-  // transition
   return (
     <div className="works" id="works">
 
       {/* left side */}
       <div className="w-left">
-        {/* <div className="awesome"> */}
-          {/* dark Mode */}
-          <span style={{ color: darkMode ? "white" : "" }}>
-            Work for 
-          </span>
-          <span> Companies & Clients</span>
-          {/* <span>
-            Lorem ispum is simpley dummy text of printing of printing Lorem
-            <br />
-            ispum is simpley dummy text of printingLorem ispum is simpley dummy
-            text
-            <br />
-            y dummy text of printingLorem
-            <br />
-            ispum is simpley dummy text of printing
-          </span>
-          <Link to="contact" smooth={true} spy={true}>
-            <button className="button s-button">Hire Me</button>
-          </Link>
-          <div
-            className="blur s-blur1"
-            style={{ background: "#ABF1FF94" }}
-          ></div> */}
-        {/* </div> */}
+        {/* dark Mode */}
+        <span style={{ color: darkMode ? "white" : "" }}>
+          Work For 
+        </span>
+        <span> Companies & Clients</span>
       </div>
 
       {/* right side */}
@@ -74,64 +51,57 @@ const Works = () => {
       variants={container}
       initial="hidden"
       whileInView="visible">
-        <motion.div className="div" style={{width: '30%'}}
-        variants={item}>
+        <motion.div className="div"
+          variants={item}>
           <h2>company 1</h2>
+          <hr/>
+          <FaLaptop style={{height:'1.6rem', width:'1.6rem', color:'#9a095d7a', marginBottom:'.3rem'}}/>
           <div className="desc">
-            <p>Lorem ispum is simpley dummy text of printing of printing Lorem  dkjcdvs vdvnjkds</p>
-            <a><p>certificate</p></a>
+            <p>Lorem ispum is simpley dummy text of printing of printing Lorem 
+              ispum is simpley dummy text of printing of printing Lorem</p>
+            <a><p>reviews</p></a>
           </div>
         </motion.div>
-        <motion.div className="div" style={{width: '50%'}}
-        variants={item}>
+        <motion.div className="div"
+          variants={item}>
           <h2>company 2</h2>
+          <hr/>
+          <FaLaptopHouse style={{height:'1.6rem', width:'1.6rem', color:'#9a095d7a', marginBottom:'.3rem'}}/>
           <div className="desc">
-            <p>Lorem ispum is simpley dummy text of printing of printing Lorem jvjs ldjvsdvd</p>
+            <p>Lorem ispum is simpley dummy text of printing of printing dvvdfgfbdf fd fdfgdLorem jvjs ldjvsdvd  dvvdfgfbdf fd fdfgdLorem </p>
             <a><p>certificate</p></a>
           </div>
         </motion.div>
-        <motion.div className="div" style={{width: '50%'}}
-        variants={item}>
+        <motion.div className="div"
+          variants={item}>
           <h2>company 3</h2>
+          <hr/>
+          <FaBriefcase style={{height:'1.6rem', width:'1.6rem', color:'#9a095d7a', marginBottom:'.3rem'}}/>
           <div className="desc">
             <p>Lorem ispum is simpley dummy text of printing of printing Loremnd kvnj dvdkvnkdsj</p>
-            <a><p>certificate</p></a>
+            <a><p>reviews</p></a>
           </div>
         </motion.div>
-        <motion.div className="div" style={{width: '30%'}}
-        variants={item}>
+        <motion.div className="div"
+          variants={item}>
           <h2>company 4</h2>
+          <hr/>
+          <FaLaptopCode style={{height:'1.6rem', width:'1.6rem', color:'#9a095d7a', marginBottom:'.3rem'}}/>
           <div className="desc">
             <p>Lorem ispum is simpley dummy text of printing of printing Lorem asjkasf</p>
             <a><p>certificate</p></a>
           </div>
         </motion.div>
-        {/* <motion.div
-          initial={{ rotate: 45 }}
-          whileInView={{ rotate: 0 }}
-          viewport={{ margin: "-40px" }}
-          transition={{ duration: 3.5, type: "spring" }}
-          className="w-mainCircle"
-        >
-          <div className="w-secCircle">
-            <img src={Upwork} alt="" />
+        <motion.div className="div"
+          variants={item}>
+          <h2>company 5</h2>
+          <hr/>
+          <FaDatabase style={{height:'1.6rem', width:'1.6rem', color:'#9a095d7a', marginBottom:'.3rem'}}/>
+          <div className="desc">
+            <p>Lorem ispum is simpley dummy text of printing of printing Lorem asjkasf</p>
+            <a><p>certificate</p></a>
           </div>
-          <div className="w-secCircle">
-            <img src={Fiverr} alt="" />
-          </div>
-          <div className="w-secCircle">
-            <img src={Amazon} alt="" />
-          </div>{" "}
-          <div className="w-secCircle">
-            <img src={Shopify} alt="" />
-          </div>
-          <div className="w-secCircle">
-            <img src={Facebook} alt="" />
-          </div>
-        </motion.div> */}
-        {/* background Circles */}
-        {/* <div className="w-backCircle blueCircle"></div> */}
-        {/* <div className="w-backCircle yellowCircle"></div> */}
+        </motion.div>
       </motion.div>
     </div>
   );

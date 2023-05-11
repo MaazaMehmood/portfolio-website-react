@@ -1,6 +1,6 @@
 .card {
-  width: 13rem;
-  height: 11rem;
+  width: 11.5rem;
+  height: 10rem;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -16,33 +16,28 @@
   padding: 5px 18px 25px 1rem;
 }
 
-/* .card span:nth-of-type(1){
-color: white;
-} */
+.card span:nth-of-type(1){
+  font-family: 'papyrus';
+  font-size: .9rem;
+}
 
 .card span:nth-of-type(2) {
   color: var(--gray);
   font-size: 16px;
 }
-/* 
-.c-button {
-    background: #FFFFFF;
-    box-shadow: 0px 19px 60px rgba(0, 0, 0, 0.08);
-    border-radius: 7px;
-    border: none;
-    padding: 10px;
-    font-size: 16px;
-    color: #071566dd;
-} */
 
-.c-button:hover{
-    transform: scale(1.1);
-    cursor: pointer;
+@media screen and (max-width: 1000px){
+  .card {
+    width: 9.5rem;
+    height: 8rem;
+  }
 }
 
 @media screen and (max-width: 600px){
   .card{
-    width: 60vw;
+    width: 8rem;
+    height: 7rem;
+    position: absolute;
     padding: .8rem;
   }
 }

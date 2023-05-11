@@ -52,19 +52,7 @@ const Testimonial = () => {
         pagination={{ clickable: true }}
         className="testimonial"
       >
-        <SwiperSlide >
-          <img src={Sidebar} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={Ecommerce} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={MusicApp} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={HOC} alt="" />
-        </SwiperSlide>
-        {/* {clients.map((client, index) => {
+        {clients.map((client, index) => {
           return (
             <SwiperSlide key={index}>
               <div className="testimonial">
@@ -73,7 +61,7 @@ const Testimonial = () => {
               </div>
             </SwiperSlide>
           );
-        })} */}
+        })}
       </Swiper>
     </div>
   );

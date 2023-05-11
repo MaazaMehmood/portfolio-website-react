@@ -8,8 +8,10 @@
   z-index: 1;
   overflow: hidden;
 }
-/* 071566
+
+/* 071566 fe346e
 071566 */
+
 .Intro::after{
   content: '';
   position: absolute;
@@ -72,12 +74,19 @@
   align-items: center;
   text-align: left;
 }
+
 .i-button {
-  width: 6rem;
-  height: 2rem;
+  width: 40%;
+  color:  #f5b157e3;
   margin-top: 1rem;
-  margin-left: .3rem;
+  margin-right: .3rem;
+  font-family: 'papyrus' ;
 }
+
+.i-button:hover {
+  cursor: pointer;
+}
+
 .i-icons {
   margin-top: .3rem;
   margin-left: .5rem;

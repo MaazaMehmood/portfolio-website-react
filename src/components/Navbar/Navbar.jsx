@@ -1,6 +1,5 @@
 import React, { useState , useContext} from 'react';
 import { themeContext } from "../../Context";
-import Toggle from "../Toggle/Toggle";
 import { motion } from "framer-motion";
 import "./Navbar.css";
 import { Link } from "react-scroll";
@@ -19,15 +18,14 @@ const Navbar = () => {
   const toggleMenu = () => {
     setMenu(!showMenu)
   }
-
+   
+  //transition
   const transition = { duration: 1, type: "spring", stiffness: 50}
 
   return (
     <div className="n-wrapper" id="Navbar">
-
       {/* left */}
       <div className="n-left">
-        {/* <Toggle /> */}
         <div 
         style={{ color: darkMode ? "white" : "" }} 
         className="n-name">PORTFOLIO</div>
@@ -71,7 +69,6 @@ const Navbar = () => {
           </motion.ul>
         </div>
       </div>
-      
     </div>
   );
 };

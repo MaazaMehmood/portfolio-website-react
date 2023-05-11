@@ -2,7 +2,7 @@ import React, { useContext, useRef, useState } from "react";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
 import { themeContext } from "../../Context";
-import { motion, useTransform, useViewportScroll } from "framer-motion";
+import { motion } from "framer-motion";
 
 
 const Contact = () => {
@@ -34,12 +34,11 @@ const Contact = () => {
 
   return (
     <div className="contact-form" id="contact">
-      {/* left side copy and paste from work section */}
       <div className="left">
         <div className="info">
           {/* darkMode */}
-          <span style={{color: darkMode?'white': ''}}>Get in Touch</span>
-          <span >Contact me</span>
+          <span style={{color: darkMode?'white': ''}}>Let's Connect!</span>
+          <span >Reach Out to Me Today and Get Started.</span>
         </div>
       </div>
       {/* right side form */}

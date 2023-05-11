@@ -11,7 +11,6 @@ const Intro = () => {
   const { scrollYProgress } = useViewportScroll();
   const scale = useTransform(scrollYProgress, [0, 1], [.8, 0.0]);
   const transition = { duration: 1, type: "spring", stiffness: 50
-  //  yoyo:Infinity
   }
 
   // contex
@@ -21,7 +20,6 @@ const Intro = () => {
   return (
     <>
     <div className="Intro" id="Intro">
-
       {/* left name side */}
       <div className="i-left">
         <div className="i-name" >
@@ -30,19 +28,20 @@ const Intro = () => {
             MAAZA MEHMOOD
           </motion.span>
           <motion.span transition={transition} whileHover={{scale:1.1}}>
-            Frontend Developer with high mid of experience in web designing
-            and development,<br/> producing the Quality work 
+            Frontend Developer with mid level of experience in web designing
+            and development,<br/>  I am committed to delivering high-quality work and code<br/> 
+            user-centric solutions that exceed client expectations.
           </motion.span>
         </div>
         <div>
           <Link to="contact" smooth={true} spy={true}>
-            <motion.button className="button i-button"
+            <motion.div className="i-button"
             initial={{x: '-100vw'}}
-            animate={{x: 0}}
+            animate={{x: -97}}
             transition={transition}
             whileHover={{scale: 1.1}}
-            >Hire me
-            </motion.button>
+            >_____________Hire me
+            </motion.div>
           </Link>
         </div>
         {/* social icons */}
@@ -72,17 +71,8 @@ const Intro = () => {
           initial={{ left: "40%" }}
           whileInView={{ left: "20%" , top: '25%'}}
           transition={transition}></motion.div>
-          {/* <motion.div className="circles"  style={{height:300, width: 300}}
-          initial={{ top: "-5%", left: "74%" }}
-          whileInView={{ left: "-15%", top: '60%'}}
-          transition={transition} ></motion.div>         
-          <motion.div className="circles"  style={{height:300, width: 300}}
-          initial={{ left: "16rem", top: "16.2rem" }}
-          whileInView={{top: '-12%' , left: "-15%" }}
-          transition={transition}></motion.div> */}
         </motion.div>
       </div>
-
     </div>
     </>
   );

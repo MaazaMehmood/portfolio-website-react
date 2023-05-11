@@ -5,6 +5,8 @@ import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import Resume from "./resume.pdf";
 
+
+
 const Services = () => {
   // context
   const theme = useContext(themeContext);
@@ -20,22 +22,22 @@ const Services = () => {
     <div className="services" id="services">
       {/* right */}
       <div className="awesome">
-        <span style={{ color: darkMode ? "white" : "" }}>My </span>
-        <span>Services</span>
+        <span style={{ color: darkMode ? "white" : "" }}>My Cutting-Edge</span>
+        <span>Services Offering</span>
         <span>
           Lorem ispum is simpley dummy text of printing of printing Lorem
           <br />
           ispum is simpley dummy text of printing
         </span>
         <a href={Resume} download>
-          <motion.button className="button s-button"
+          <motion.div className="button s-button"
            initial={{x: '100vw'}}
-           animate={{x: 0}}
+           animate={{x: 150}}
            transition={transition}
            whileHover={{scale: 1.1}}
           >
-            Resume
-          </motion.button>
+            Resume_________________________________________________________
+          </motion.div>
         </a>
       </div>
 
@@ -43,8 +45,8 @@ const Services = () => {
       <div className="cards">
         {/* first card */}
         <motion.div
-          initial={{ left: "15rem" }}
-          whileInView={{ left: "13rem" }}
+          initial={{ left: "12rem" }}
+          whileInView={{ left: "10rem" }}
           transition={transition}
         >
           <Card
@@ -65,8 +67,8 @@ const Services = () => {
         </motion.div>
         {/* 3rd card*/}
         <motion.div
-          initial={{ top: "14rem", left: "15rem" }}
-          whileInView={{ left: "13rem" }}
+          initial={{ top: "14rem", left: "12rem" }}
+          whileInView={{ left: "10rem" }}
           transition={transition}
         >
           <Card
