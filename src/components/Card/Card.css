@@ -28,14 +28,14 @@
 
 @media screen and (max-width: 1000px){
   .card {
-    width: 9.5rem;
+    width: 9rem;
     height: 8rem;
   }
 }
 
 @media screen and (max-width: 600px){
   .card{
-    width: 8rem;
+    width: 8.5rem;
     height: 7rem;
     position: absolute;
     padding: .8rem;

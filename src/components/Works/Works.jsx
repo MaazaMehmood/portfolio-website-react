@@ -22,7 +22,7 @@ const Works = () => {
       scale: 1,
       transition: {
         delayChildren: 0.1,
-        staggerChildren: 0.1
+        staggerChildren: 0.2
       }
     }
   }  
@@ -48,13 +48,13 @@ const Works = () => {
 
       {/* right side */}
       <motion.div className="w-right" 
-      variants={container}
-      initial="hidden"
-      whileInView="visible">
+        variants={container}
+        initial="hidden"
+        whileInView="visible">
         <motion.div className="div"
           variants={item}>
           <h2>company 1</h2>
-          <hr/>
+          
           <FaLaptop style={{height:'1.6rem', width:'1.6rem', color:'#9a095d7a', marginBottom:'.3rem'}}/>
           <div className="desc">
             <p>Lorem ispum is simpley dummy text of printing of printing Lorem 
@@ -65,7 +65,7 @@ const Works = () => {
         <motion.div className="div"
           variants={item}>
           <h2>company 2</h2>
-          <hr/>
+          
           <FaLaptopHouse style={{height:'1.6rem', width:'1.6rem', color:'#9a095d7a', marginBottom:'.3rem'}}/>
           <div className="desc">
             <p>Lorem ispum is simpley dummy text of printing of printing dvvdfgfbdf fd fdfgdLorem jvjs ldjvsdvd  dvvdfgfbdf fd fdfgdLorem </p>
@@ -75,7 +75,7 @@ const Works = () => {
         <motion.div className="div"
           variants={item}>
           <h2>company 3</h2>
-          <hr/>
+        
           <FaBriefcase style={{height:'1.6rem', width:'1.6rem', color:'#9a095d7a', marginBottom:'.3rem'}}/>
           <div className="desc">
             <p>Lorem ispum is simpley dummy text of printing of printing Loremnd kvnj dvdkvnkdsj</p>
@@ -85,7 +85,7 @@ const Works = () => {
         <motion.div className="div"
           variants={item}>
           <h2>company 4</h2>
-          <hr/>
+         
           <FaLaptopCode style={{height:'1.6rem', width:'1.6rem', color:'#9a095d7a', marginBottom:'.3rem'}}/>
           <div className="desc">
             <p>Lorem ispum is simpley dummy text of printing of printing Lorem asjkasf</p>
@@ -95,7 +95,7 @@ const Works = () => {
         <motion.div className="div"
           variants={item}>
           <h2>company 5</h2>
-          <hr/>
+         
           <FaDatabase style={{height:'1.6rem', width:'1.6rem', color:'#9a095d7a', marginBottom:'.3rem'}}/>
           <div className="desc">
             <p>Lorem ispum is simpley dummy text of printing of printing Lorem asjkasf</p>

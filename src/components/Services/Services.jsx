@@ -22,21 +22,28 @@ const Services = () => {
     <div className="services" id="services">
       {/* right */}
       <div className="awesome">
-        <span style={{ color: darkMode ? "white" : "" }}>My Cutting-Edge</span>
-        <span>Services Offering</span>
+        <motion.span 
+        initial={{x: 200}}
+        whileInView={{x: 0}}
+        transition={transition}
+        style={{ color: darkMode ? "white" : "" }}>My Cutting-Edge</motion.span>
+        <motion.span
+        initial={{ x: 200}}
+        whileInView={{ x: 0}}
+        transition={{ duration: 2, type: "spring", stiffness: 50}}>Services Offering</motion.span>
         <span>
-          Lorem ispum is simpley dummy text of printing of printing Lorem
+          Lorem ipsum is simpley dummy text of printing of printing Lorem
           <br />
           ispum is simpley dummy text of printing
         </span>
         <a href={Resume} download>
           <motion.div className="button s-button"
            initial={{x: '100vw'}}
-           animate={{x: 150}}
+           animate={{x: 190}}
            transition={transition}
            whileHover={{scale: 1.1}}
           >
-            Resume_________________________________________________________
+            Resume________________
           </motion.div>
         </a>
       </div>

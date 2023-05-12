@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import { FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaGithub, FaCopyright } from 'react-icons/fa';
 import { motion } from "framer-motion";
 
 
@@ -8,9 +8,6 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="f-content">
-        <motion.span
-        transition={{duration: 1, type: "spring", stiffness: 50, yoyo:Infinity}}
-        whileHover={{scale:1.1}}>Email at: maazamehmood24@gmail.com</motion.span>
         <div className="f-icons">
           <motion.div className="i-icons"
           initial={{y: '10vw'}}
@@ -28,6 +25,9 @@ const Footer = () => {
             </a>
           </motion.div>
         </div>
+        <motion.span
+        transition={{duration: 1, type: "spring", stiffness: 50, yoyo:Infinity}}
+        whileHover={{scale:1.1}}>Copyright <FaCopyright/> design by Maaza Mehmood</motion.span>
       </div>
     </div>
   );

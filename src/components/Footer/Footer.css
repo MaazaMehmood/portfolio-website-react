@@ -5,7 +5,7 @@
   position: relative;
   padding: .5rem;
   height: 50vh;
-  background-image: linear-gradient(to right, #030f53, #fe346e);
+  background-image: linear-gradient(to right, #012452,#030f53,#9e3452ed,#f40d4ed8);
 }
 
 .footer::after{
@@ -16,7 +16,7 @@
   height: 100%;
   width: 100%;
   background: rgba(40, 40, 40, 0.797);
-  opacity: 0.4;
+  opacity: 0.6;
   z-index: 1;
 }
 

@@ -57,8 +57,8 @@ const Navbar = () => {
               </Link>
             </motion.li>
             <motion.li whileHover={{scale: 1.2}} transition={transition}>
-              <Link to="testimonial" spy={true} smooth={true}>
-                Project
+              <Link to="portfolio" spy={true} smooth={true}>
+                Projects
               </Link>
             </motion.li>
             <motion.li whileHover={{scale: 1.2}} transition={transition} >

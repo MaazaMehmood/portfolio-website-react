@@ -3,14 +3,11 @@
   justify-content: space-around;
   height: 90vh;
   background-position: top center;
-  background-image: linear-gradient(to right, #030f53, #fe346e);
+  background-image: linear-gradient(to right,#012452,#030f53,#9e3452ed,#fe346df4);
   position: relative;
   z-index: 1;
   overflow: hidden;
 }
-
-/* 071566 fe346e
-071566 */
 
 .Intro::after{
   content: '';
@@ -20,7 +17,7 @@
   height: 100%;
   width: 100%;
   background: rgba(40, 40, 40, 0.918);
-  opacity: 0.5;
+  opacity: 0.55;
   z-index: -1;
 }
 
@@ -73,13 +70,14 @@
   margin-left: 5px;
   align-items: center;
   text-align: left;
+  white-space: wrap;
 }
 
 .i-button {
-  width: 40%;
+  width: 45%;
   color:  #f5b157e3;
   margin-top: 1rem;
-  margin-right: .3rem;
+  /* margin-right: .2rem; */
   font-family: 'papyrus' ;
 }
 

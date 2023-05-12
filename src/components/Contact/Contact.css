@@ -2,28 +2,23 @@
     padding: 3rem;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: right;
+    justify-content:  left;
     height: 80vh;
-    margin-top: 4rem;
+    margin-top: 2rem;
       /* scroll */
-    padding-top: 2rem;
+    padding-top: 6rem;
 }
 
-/* .left {
-    display: flex;
-    position: relative;
-    margin-right: 7rem;
-} */
-
 .info {
-  margin: 1rem;
+  margin: .5rem;
+  top: -15%;
   display: flex;
   flex-direction: column;
   justify-content: left;
   align-items: left;
   position: relative;
   gap: 0.1rem;
-  margin-right: 2rem;
+  margin-left: 3rem;
 }
 
 .info > :nth-child(1) {
@@ -34,16 +29,40 @@
 
 .info > :nth-child(2) {
     color: #07145add;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     font-weight: bold;
+    padding-bottom: 1rem;
 }
+
+.connect {
+    display: flex;
+    justify-content:left;
+    align-items: right;
+}
+
+.connect > .ico {
+    margin: .2rem;
+    color: #9a095d7a;
+}
+
+.connect > p {
+    text-align: right;
+    padding-left: .5rem;
+}
+
+/* .c-icon {
+    height: 33rem;
+    width: 33rem;
+    z-index: -1;
+    color:#9a095e21;
+} */
 
 .c-right{
     display: flex;
     justify-content: center;
     position: relative;
     flex: 1;
-    margin: 0 4rem;
+    margin: 0 3rem;
 }
 
 .c-right>form
@@ -55,7 +74,7 @@
 }
 
 .c-right .user{
-    width: 25rem;
+    width: 22rem;
     height: 1.7rem;
     padding: 0.7em;
     outline: none;
@@ -68,25 +87,59 @@ textarea{
     height: 4rem!important;
 }
 
-.button {
-    width: 6rem;
-    height: 2rem;
+.c-button {
+    color:  #f5b157e3;
+    margin-top: 1rem;
+    font-family: 'papyrus' ;
+    margin-right: 5rem;
+    background: transparent;
+    border: none;
 }
 
-@media screen and (max-width: 600px) {
+.c-button:hover {
+cursor: pointer;
+}
+
+@media screen and (max-width: 1100px) {
     .info {
         margin-left: -1rem;
+        margin-right: 1rem;
+        top: -5%;
+        gap:0.1;
+    }
+    .info > :nth-child(2) {
+        font-size: 2rem;
+        white-space: wrap;
+    }
+    .c-right .user{
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width:  900px) {
+    .info {
+        margin-left: 1.5rem;
         gap:0;
     }
     .contact-form{
-        margin-top: 7rem;
+        margin-top: 3rem;
+        padding-bottom: 15rem;
         flex-direction: column;
         justify-content: center;
         gap: 2rem;
-        height: 40rem;
+        height: 30rem;
     }
     .c-right .user{
         width: 15rem;
     }
+    .c-icon {
+        display: none;
+    }
+}  
 
-}   
+@media screen and (max-width: 600px) {
+    .info {
+        margin-left: -1rem;
+    }
+    
+}

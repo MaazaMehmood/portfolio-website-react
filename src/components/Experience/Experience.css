@@ -3,12 +3,13 @@
   align-items: center;
   justify-content: center;
   gap: 4rem;
-  height: 25vh;
-  margin-bottom:6rem;
-  margin-top:3rem;
-  padding-top:4rem;
+  height: 50vh;
+  padding-bottom:4rem;
+  margin-top: 1rem;
+  padding-top: 4rem;
   /* darkmode */
   color: var(--black);
+  overflow: hidden;
 }
 .achievement{
     display: flex;
@@ -18,8 +19,8 @@
 .circle {
     width: 5rem;
     height: 5rem;
-    border-radius: 100%;
-    border: 2px solid #021a4b ;
+    border-radius: 40%;
+    border: 2px solid #030f53 ;
     position: relative;
     display: flex;
     align-items: center;
@@ -29,23 +30,19 @@
     margin-bottom: 1rem;
     z-index: 2;
 }
-.circle::before {
-    border-radius: 100%;
-    content: '';
-    opacity: .99;
-    /* background: white; */
-    /* background-image: linear-gradient(to bottom, #020d47da 50%, #81023f7f 100%); */
-    top: -5px;
-    left: -5px;
+.circle > h3 {
+   font-size: 2rem;
+    top: -58px;
     bottom: -5px;
     right: -5px;
     position: absolute;
-    z-index:-1;
-    box-shadow: var(--boxShadow);
+    z-index: 1;
+    color: #87034c77;
 }
 
 .achievement span{
-    font-family: 'Courier New' ;
+    font-size: .95rem;
+    font-family: 'papyrus';
     color: var(--orange);
 }
 

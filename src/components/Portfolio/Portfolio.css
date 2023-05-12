@@ -2,29 +2,28 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 80vh;
+  height: 90vh;
   padding-top: 1rem;
-  margin-top: 5rem;
-
+  margin-top: 1rem;
+  background:rgba(224, 224, 225, 0.74);
 }
 
 /* heading */
 .portfolio-head {
   margin-left: 5rem;
-  margin-top: 2rem;
   display: flex;
   flex-direction: column;
 }
 
 .portfolio-head span:nth-of-type(1) {
   color: var(--black);
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 1.9rem;
+  /* font-weight: bold; */
 }
 
 .portfolio-head span:nth-of-type(2) {
   color: #07145add;
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   font-weight: bold;
 }
 
@@ -32,29 +31,78 @@
 .portfolio .swiper{
     /* overflow: visible!important; */
     overflow: hidden;
+    margin-right: 2rem;
 }
 
 .portfolio-slider {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
-  padding: 5rem;
+  margin-top: 10rem;
+  padding: 3rem;
   width: 60%;
-  height: 80vh;
-  border-radius: 50rem;
+  height: 70vh;
+  overflow: hidden;
+  /* border-radius: 50rem; */
 }
 
 .portfolio-slider .swiper-slide {
   align-items: center;
-  width: 10rem;
-  padding: 5rem;
+  width: 5rem;
+  padding: 1rem;
 }
 .portfolio img {
-  width: 14rem;
-  height: 10rem;
-  filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.13));
+  width: 15rem;
+  height: 11rem;
+  filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.325));
   border-radius: .5rem;
 }
 
+
+@media screen and (max-width: 900px) {
+  .portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    padding-top: 5rem;
+    margin-top: 1rem;
+  }
+  .portfolio-head {
+    margin-left: 1rem;
+  }
+  .portfolio .swiper{
+    margin-right: 7rem;
+    align-items: center;
+  }
+  .portfolio-slider {
+    margin-top: 5rem;
+    padding: 1rem;
+    width: 80%;
+    height: 70vh;
+    left: 5rem;
+    right: 8rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .portfolio-head {
+    margin-left: 4.4rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .portfolio-head {
+    margin-left: 2rem;
+  }
+  .portfolio .swiper{
+    margin-right: 9rem;
+    align-items: center;
+  }
+  .portfolio-slider {
+    left: 2.5rem;
+
+  }
+}

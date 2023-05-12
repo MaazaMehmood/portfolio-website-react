@@ -29,18 +29,18 @@ const Intro = () => {
           </motion.span>
           <motion.span transition={transition} whileHover={{scale:1.1}}>
             Frontend Developer with mid level of experience in web designing
-            and development,<br/>  I am committed to delivering high-quality work and code<br/> 
-            user-centric solutions that exceed client expectations.
+            and development,<br/>  I am committed to delivering high-quality work and code
+            user-centric solutions<br/> that exceed client expectations.
           </motion.span>
         </div>
         <div>
           <Link to="contact" smooth={true} spy={true}>
             <motion.div className="i-button"
             initial={{x: '-100vw'}}
-            animate={{x: -97}}
+            animate={{x: -80}}
             transition={transition}
             whileHover={{scale: 1.1}}
-            >_____________Hire me
+            >_____________HireMe
             </motion.div>
           </Link>
         </div>
