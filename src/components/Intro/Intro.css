@@ -3,9 +3,9 @@
   justify-content: space-around;
   height: 90vh;
   background-position: top center;
-  background-image: linear-gradient(to right,#012452,#030f53,#9e3452ed,#fe346df4);
+  background-image: linear-gradient(to right,#012047,#020b3f,#9e3452f1,#fe346deb);
   position: relative;
-  z-index: 1;
+  z-index: -1;
   overflow: hidden;
 }
 
@@ -17,7 +17,7 @@
   height: 100%;
   width: 100%;
   background: rgba(40, 40, 40, 0.918);
-  opacity: 0.55;
+  opacity: 0.5;
   z-index: -1;
 }
 

@@ -2,6 +2,7 @@ import React, { useState , useContext} from 'react';
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import "./Navbar.css";
+import MobileMenu from '../MobileMenu/MobileMenu';
 import { Link } from "react-scroll";
 
 
@@ -12,12 +13,12 @@ const Navbar = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
-  const [showMenu, setMenu] = useState(false);
+  // const [showMenu, setMenu] = useState(false);
  
   //mob menu
-  const toggleMenu = () => {
-    setMenu(!showMenu)
-  }
+  // const toggleMenu = () => {
+  //   setMenu(!showMenu)
+  // }
    
   //transition
   const transition = { duration: 1, type: "spring", stiffness: 50}
@@ -33,7 +34,8 @@ const Navbar = () => {
       
       {/* right */}
       <div className="n-right">
-        {/* <button className="mob-toggle" onClick={toggleMenu}>menu</button> */}
+        <MobileMenu/>
+        {/* <button className="mob-toggle" onClick={toggleMenu}>{showMenu ? 'Close Menu' : 'Open Menu'}</button> */}
         <div className="n-list">
           <motion.ul style={{ listStyleType: "none" }}>
             <motion.li whileHover={{scale: 1.2}}  transition={transition}>

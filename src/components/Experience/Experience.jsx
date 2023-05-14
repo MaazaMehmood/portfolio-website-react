@@ -18,7 +18,7 @@ const Experience = () => {
       <div className="achievement">
         {/* darkMode */}
         <motion.div 
-        initial={{ left: "-10rem" }}
+        initial={{ left: "-8rem" }}
         whileInView={{ left: "0rem" }}
         transition={{duration: 1, type: "spring", stiffness: 50}}
         style={{ scale }}
@@ -40,7 +40,7 @@ const Experience = () => {
       </div>
       <div className="achievement">
         <motion.div
-        initial={{ right: "-10rem" }}
+        initial={{ right: "-8rem" }}
         whileInView={{ right: "0rem" }}
         transition={{duration: 1,  type: "spring", stiffness: 50}}
         className="circle" style={{color: darkMode?'var(--orange)':'', scale}}><h3>2+</h3><FaWarehouse style={{height:'1.6rem', width:'1.6rem', color:'#9a095d7a', marginBottom:'.3rem'}}/>

@@ -20,7 +20,6 @@
 
 .w-left > :nth-child(1) {
   font-size: 1.9rem;
-  /* font-weight: bold; */
   text-align: center;
 }
 
@@ -52,7 +51,6 @@
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: left;
   height: 47vh;
@@ -77,12 +75,13 @@
 }
 
 p {
-  height: 25px;
+  height: 45px;
   color: var(--gray);
   display: flex;
   flex-wrap: wrap;
   font-size: .8rem;
   z-index: -1;
+  margin-bottom: .5rem;
 }
 
 a p {
@@ -92,30 +91,45 @@ a p {
   font-size: 2rem;
   margin-right: 1rem;
   text-align: center;
+  padding: 0rem;
 
 }
 
 a p:hover {
   cursor: pointer;
-  /* text-decoration: underline;
-  transform: scale(1.002); */
   transition: .7s ease-in-out;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1220px) {
+  .works {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 135vh;
+    padding-bottom: 6rem;
+  }
   .w-left{
    margin-right: 0;
    margin-left: 2rem;
   }
   .w-right {
-    left: -9%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+    margin: .5rem;
+    left: 2%;
   }
   .div {
-    width: 70%;
-    height: 40vh;
+    margin: .5rem;
+    padding: 0.8rem;
+    width: 23%;
+    height: 50vh;
   }
 }
-
 
 @media screen and (max-width: 900px) {
   .works {
@@ -123,7 +137,7 @@ a p:hover {
     flex-direction: column;
     height: inherit;
     padding:0 ;
-    gap: .2rem;
+    gap: .1rem;
   }
 
   .works::after{
@@ -132,7 +146,7 @@ a p:hover {
 
   .w-left{
     padding-top: 5rem;
-    margin-right: 8rem;
+    margin-right: 9rem;
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -151,13 +165,12 @@ a p:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    left: -3%;
+    left: -1%;
   }
-
-  /* .div {
+  .div {
     width: 70%;
     height: 40vh;
-  } */
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -166,11 +179,11 @@ a p:hover {
   }
 
   .w-right {
-    left: -5%;
+    left: 2%;
   }
 
   .div {
-    width: 100%;
+    width: 80%;
     height: 40vh;
   }
 }
@@ -179,9 +192,16 @@ a p:hover {
 @media screen and (max-width: 550px) {
   .w-left{
    margin-right: 0;
-   margin-left: 2rem;
+   margin-left: .7rem;
   }
   .w-right {
-    left: -9%;
+    left: 2%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .w-left{
+   margin-right: 0;
+   margin-left: 1.8rem;
   }
 }

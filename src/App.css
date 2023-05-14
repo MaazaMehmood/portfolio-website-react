@@ -16,20 +16,9 @@
     color: var(--black);    
 }
 
-/* .button {
-    background: linear-gradient(180deg, #f7ce97 26.71%, #f5b157 99.36%);
-    border-radius: 34px;
-    border: none;
-    color: white;
-    font-size: 16px;
-    font-family: 'papyrus';
-    padding: 11px 26px 11px 26px;
-    gap: 1rem;
-  }
-   */
-  .button:hover {
-    cursor: pointer;
-  }
+.button:hover {
+  cursor: pointer;
+}
   
   @media screen and (max-width: 480px) {
     .App {

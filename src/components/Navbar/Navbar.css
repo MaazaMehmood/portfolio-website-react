@@ -46,14 +46,6 @@
   cursor: pointer;
 }
 
-.n-button {
-  flex: 1;
-  margin-right: .3rem;
-}
-
-/* mobile menu */
-
-
 
 @media screen and (max-width: 1000px) {
   .n-wrapper {

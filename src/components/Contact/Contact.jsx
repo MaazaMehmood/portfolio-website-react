@@ -47,14 +47,14 @@ const Contact = () => {
            initial={{ x: 200}}
            whileInView={{ x: 0}}
            transition={{ duration: 2, type: "spring", stiffness: 50}}
-          >ReachOut to Me and Get Started..</motion.span>
+          >Reach Out to Me and Get Started..</motion.span>
           <div className="connect">
             <FaMailBulk className='ico' /> 
             <p>maazamehmood24@gmail.com</p>
           </div>
           <div className="connect">
             <FaPhoneAlt className="ico"/> 
-            <p>03323581245</p>
+            <p>01234567890</p>
           </div>
         </div>
       </div>
@@ -70,7 +70,6 @@ const Contact = () => {
           transition={{duration: 1, type: "spring", stiffness: 50}}
           whileHover={{scale: 1.1}}/>
           <span>{done && "Thanks for Contacting me"}</span>
-          {/* <FaPhoenixFramework className="c-icon"/> */}
         </form>
         
       </div>

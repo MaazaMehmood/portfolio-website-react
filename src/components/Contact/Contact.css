@@ -7,6 +7,7 @@
     margin-top: 2rem;
       /* scroll */
     padding-top: 6rem;
+    overflow: hidden;
 }
 
 .info {
@@ -17,14 +18,13 @@
   justify-content: left;
   align-items: left;
   position: relative;
-  gap: 0.1rem;
+  gap: 0.05rem;
   margin-left: 3rem;
 }
 
 .info > :nth-child(1) {
     color: var(--black);
-    font-size: 1.9em;
-    font-weight: bold;
+    font-size: 1.9rem;
 }
 
 .info > :nth-child(2) {
@@ -38,6 +38,8 @@
     display: flex;
     justify-content:left;
     align-items: right;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .connect > .ico {
@@ -49,13 +51,6 @@
     text-align: right;
     padding-left: .5rem;
 }
-
-/* .c-icon {
-    height: 33rem;
-    width: 33rem;
-    z-index: -1;
-    color:#9a095e21;
-} */
 
 .c-right{
     display: flex;
@@ -118,7 +113,7 @@ cursor: pointer;
 
 @media screen and (max-width:  900px) {
     .info {
-        margin-left: 1.5rem;
+        margin-left: 1.8rem;
         gap:0;
     }
     .contact-form{
@@ -137,9 +132,20 @@ cursor: pointer;
     }
 }  
 
+@media screen and (max-width: 750px) {
+    .info {
+        margin-left: -0.1rem;
+    } 
+}
+
+@media screen and (max-width: 700px) {
+    .info {
+        margin-left: 1.5rem;
+    } 
+}
+
 @media screen and (max-width: 600px) {
     .info {
-        margin-left: -1rem;
-    }
-    
+        margin-left: -.8rem;
+    } 
 }
