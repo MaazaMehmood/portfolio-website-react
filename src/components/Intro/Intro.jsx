@@ -1,21 +1,17 @@
-import React, { useContext } from "react";
+import React from "react";
 import "./Intro.css";
 import { FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
-import { themeContext } from "../../Context";
 import { motion, useTransform, useViewportScroll } from "framer-motion";
 import { Link } from "react-scroll";
 
 
 const Intro = () => {
+
   // Transition
   const { scrollYProgress } = useViewportScroll();
   const scale = useTransform(scrollYProgress, [0, 1], [.8, 0.0]);
   const transition = { duration: 1, type: "spring", stiffness: 50
-  }
-
-  // contex
-  const theme = useContext(themeContext);
-  const darkMode = theme.state.darkMode;
+  };
 
   return (
     <>
@@ -23,7 +19,7 @@ const Intro = () => {
       {/* left name side */}
       <div className="i-left">
         <div className="i-name" >
-          <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
+          <span >Hy! I Am</span>
           <motion.span transition={transition}>
             MAAZA MEHMOOD
           </motion.span>

@@ -1,30 +1,24 @@
 :root
 {
-  --yellow: #20366b;
-    --orange : #130852;
-    --black : #1b2236;
-    --gray : #8a8b8e;
-    --blueCard : #fdc1df72;
-    --purple: #ffe79a;
-    --boxShadow : 0px 19px 60px rgba(0, 0, 0, 0.096);
-    --orangeCard: #ef5a5a;
-    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+  --blue : #130852;
+  --blackBlue : #1b2236;
+  --gray : #7b7c7c;
+  --pinkCard : #fdc1df72;
+  --yellow: #f5b157e3;
+  --boxShadow : 0px 19px 60px rgba(0, 0, 0, 0.096);
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
 }
 
 .App{
-    overflow: hidden;
-    color: var(--black);    
-}
-
-.button:hover {
-  cursor: pointer;
+  overflow: hidden;
+  color: var(--black);    
 }
   
-  @media screen and (max-width: 480px) {
-    .App {
-      padding: 0.5rem 0;
-    }
+@media screen and (max-width: 480px) {
+  .App {
+    padding: 0.5rem 0;
   }
+}
 
   
 

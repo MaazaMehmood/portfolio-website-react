@@ -1,14 +1,11 @@
-import React, { useContext, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
-import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
-import { FaCandyCane, FaCashRegister, FaCodiepie, FaLaptopCode, FaMailBulk, FaPhoenixFramework, FaPhoneAlt } from 'react-icons/fa';
+import { FaMailBulk, FaPhoneAlt } from 'react-icons/fa';
 
 
 const Contact = () => {
-  const theme = useContext(themeContext);
-  const darkMode = theme.state.darkMode;
   const form = useRef();
   const [done, setDone] = useState(false)
   const sendEmail = (e) => {
@@ -37,12 +34,11 @@ const Contact = () => {
     <div className="contact-form" id="contact">
       <div className="left">
         <div className="info">
-          {/* darkMode */}
           <motion.span 
           initial={{ x: 200}}
           whileInView={{ x: 0}}
           transition={{ duration: 1, type: "spring", stiffness: 50}}
-          style={{color: darkMode?'white': ''}}>Let's Connect!</motion.span>
+          >Let's Connect!</motion.span>
           <motion.span 
            initial={{ x: 200}}
            whileInView={{ x: 0}}
@@ -58,6 +54,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+
       {/* right side form */}
       <div className="c-right">
         <form ref={form} onSubmit={sendEmail}>
@@ -71,9 +68,7 @@ const Contact = () => {
           whileHover={{scale: 1.1}}/>
           <span>{done && "Thanks for Contacting me"}</span>
         </form>
-        
       </div>
-      
     </div>
   );
 };

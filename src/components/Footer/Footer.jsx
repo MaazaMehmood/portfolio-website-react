@@ -27,7 +27,7 @@ const Footer = () => {
         </div>
         <motion.span
         transition={{duration: 1, type: "spring", stiffness: 50, yoyo:Infinity}}
-        whileHover={{scale:1.1}}>Copyright <FaCopyright/> design by Maaza Mehmood</motion.span>
+        >Copyright <FaCopyright/> 2023. design by Maaza Mehmood</motion.span>
       </div>
     </div>
   );

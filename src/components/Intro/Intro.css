@@ -5,7 +5,7 @@
   background-position: top center;
   background-image: linear-gradient(to right,#012047,#020b3f,#9e3452f1,#fe346deb);
   position: relative;
-  z-index: -1;
+  z-index: 0;
   overflow: hidden;
 }
 
@@ -16,8 +16,8 @@
   top: 0;
   height: 100%;
   width: 100%;
-  background: rgba(40, 40, 40, 0.918);
-  opacity: 0.5;
+  background: rgba(40, 40, 40, 0.852);
+  opacity: 0.4;
   z-index: -1;
 }
 
@@ -32,6 +32,7 @@
   padding-left: 3rem;
   gap: 1rem;
 }
+
 .i-name {
   display: flex;
   flex-wrap: wrap;
@@ -59,7 +60,7 @@
   font-weight: lighter;
   font-family: 'Courier New';
   letter-spacing: .2rem;
-  font-size:3rem;
+  font-size: 3rem;
 }
 .i-name > :nth-child(3) {
   opacity: 0;
@@ -75,9 +76,8 @@
 
 .i-button {
   width: 45%;
-  color:  #f5b157e3;
+  color:  var(--yellow);
   margin-top: 1rem;
-  /* margin-right: .2rem; */
   font-family: 'papyrus' ;
 }
 

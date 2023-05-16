@@ -8,16 +8,17 @@
   margin-top: 1rem;
   padding-top: 4rem;
   margin: 0 -3rem;
-  /* darkmode */
-  color: var(--black);
+  color: var(--blackBlue);
   overflow: hidden;
 }
+
 .achievement{
     display: flex;
     flex-direction: column;    
     align-items: center;
     z-index: -1;
 }
+
 .circle {
     width: 5rem;
     height: 5rem;
@@ -32,6 +33,7 @@
     margin-bottom: 1rem;
     z-index: 2;
 }
+
 .circle > h3 {
    font-size: 2rem;
     top: -58px;
@@ -45,7 +47,7 @@
 .achievement span{
     font-size: .95rem;
     font-family: 'papyrus';
-    color: var(--orange);
+    color: var(--blue);
 }
 
 

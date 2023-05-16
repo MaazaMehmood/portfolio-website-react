@@ -1,20 +1,16 @@
-import React, { useContext, useEffect, useRef } from "react";
+import React from "react";
 import "./Works.css";
-import { themeContext } from "../../Context";
-import { motion, useSpring } from "framer-motion";
-import {Link} from 'react-scroll';
+import { motion} from "framer-motion";
+// import {Link} from 'react-scroll';
 import { FaLaptop, FaLaptopCode } from 'react-icons/fa';
 import { FaLaptopHouse } from 'react-icons/fa';
-import { FaCode } from 'react-icons/fa';
 import { FaDatabase } from 'react-icons/fa';
 import { FaBriefcase } from 'react-icons/fa';
 
 
 const Works = () => {
-  // context
-  const theme = useContext(themeContext);
-  const darkMode = theme.state.darkMode;
-
+  
+  // animation
   const container = {
     hidden: { opacity: 1, scale: 0 },
     visible: {
@@ -36,11 +32,9 @@ const Works = () => {
 
   return (
     <div className="works" id="works">
-
       {/* left side */}
       <div className="w-left">
-        {/* dark Mode */}
-        <span style={{ color: darkMode ? "white" : "" }}>
+        <span >
           Work For 
         </span>
         <span> Companies & Clients</span>
@@ -51,10 +45,10 @@ const Works = () => {
         variants={container}
         initial="hidden"
         whileInView="visible">
+
         <motion.div className="div"
           variants={item}>
           <h2>company 1</h2>
-          
           <FaLaptop style={{height:'1.6rem', width:'1.6rem', color:'#9a095d7a', marginBottom:'.3rem'}}/>
           <div className="desc">
             <p>Lorem ispum is simpley dummy text of printing of printing Lorem 
@@ -65,7 +59,6 @@ const Works = () => {
         <motion.div className="div"
           variants={item}>
           <h2>company 2</h2>
-          
           <FaLaptopHouse style={{height:'1.6rem', width:'1.6rem', color:'#9a095d7a', marginBottom:'.3rem'}}/>
           <div className="desc">
             <p>Lorem ispum is simpley dummy text of printing of printing dvvdfgfbdf fd fdfgdLorem jvjs ldjvsdvd  dvvdfgfbdf fd fdfgdLorem </p>
@@ -75,7 +68,6 @@ const Works = () => {
         <motion.div className="div"
           variants={item}>
           <h2>company 3</h2>
-        
           <FaBriefcase style={{height:'1.6rem', width:'1.6rem', color:'#9a095d7a', marginBottom:'.3rem'}}/>
           <div className="desc">
             <p>Lorem ispum is simpley dummy text of printing of printing Loremnd kvnj dvdkvnkdsj</p>
@@ -85,7 +77,6 @@ const Works = () => {
         <motion.div className="div"
           variants={item}>
           <h2>company 4</h2>
-         
           <FaLaptopCode style={{height:'1.6rem', width:'1.6rem', color:'#9a095d7a', marginBottom:'.3rem'}}/>
           <div className="desc">
             <p>Lorem ispum is simpley dummy text of printing of printing Lorem asjkasf</p>
@@ -95,13 +86,13 @@ const Works = () => {
         <motion.div className="div"
           variants={item}>
           <h2>company 5</h2>
-         
           <FaDatabase style={{height:'1.6rem', width:'1.6rem', color:'#9a095d7a', marginBottom:'.3rem'}}/>
           <div className="desc">
             <p>Lorem ispum is simpley dummy text of printing of printing Lorem asjkasf</p>
             <a><p>certificate</p></a>
           </div>
         </motion.div>
+        
       </motion.div>
     </div>
   );

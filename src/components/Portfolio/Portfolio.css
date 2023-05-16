@@ -5,7 +5,8 @@
   height: 90vh;
   padding-top: 1rem;
   margin-top: 1rem;
-  background:rgba(224, 224, 225, 0.74);
+  background: url('../../img/sliderkeyboard.jpg');
+  /* background:rgba(224, 224, 225, 0.74); */
   z-index: -1;
 }
 
@@ -17,12 +18,12 @@
 }
 
 .portfolio-head span:nth-of-type(1) {
-  color: var(--black);
+  color: var(--blackBlue);
   font-size: 1.9rem;
 }
 
 .portfolio-head span:nth-of-type(2) {
-  color: #07145add;
+  color: var(--blue);
   font-size: 2.4rem;
   font-weight: bold;
 }
@@ -62,6 +63,7 @@
 
 @media screen and (max-width: 900px) {
   .portfolio {
+    background: rgba(224, 224, 225, 0.74);
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -23,12 +23,12 @@
 }
 
 .info > :nth-child(1) {
-    color: var(--black);
+    color: var(--blackBlue);
     font-size: 1.9rem;
 }
 
 .info > :nth-child(2) {
-    color: #07145add;
+    color: var(--blue);
     font-size: 2.3rem;
     font-weight: bold;
     padding-bottom: 1rem;
@@ -73,7 +73,7 @@
     height: 1.7rem;
     padding: 0.7em;
     outline: none;
-    border: 1px solid #030f53;
+    border: 1px solid var(--blue);
     border-radius: 8px;
     font-size: 16px;   
 }
@@ -83,7 +83,7 @@ textarea{
 }
 
 .c-button {
-    color:  #f5b157e3;
+    color:  var(--yellow);
     margin-top: 1rem;
     font-family: 'papyrus' ;
     margin-right: 5rem;
@@ -92,8 +92,8 @@ textarea{
 }
 
 .c-button:hover {
-cursor: pointer;
-}
+    cursor: pointer;
+  }
 
 @media screen and (max-width: 1100px) {
     .info {
@@ -126,9 +126,6 @@ cursor: pointer;
     }
     .c-right .user{
         width: 15rem;
-    }
-    .c-icon {
-        display: none;
     }
 }  
 

@@ -18,7 +18,7 @@
 .n-name {
   font-size: .8rem;
   font-family: 'papyrus' ;
-  color: #071566;
+  color: var(--blue);
 }
 
 .n-right {
@@ -37,7 +37,7 @@
   margin: 0 2rem;
 }
 .n-list > ul li {
-  color: #071566ce;
+  color: var(--blue);
   font-size: .8rem;
 }
 
@@ -60,9 +60,5 @@
   .n-button {
     display: none;
   }
-  .mob-toggle {
-    display: block;
-  }
-
 }
 

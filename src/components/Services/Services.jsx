@@ -1,22 +1,14 @@
-import React, { useContext } from "react";
+import React from "react";
 import "./Services.css";
 import Card from "../Card/Card";
-import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import Resume from "./resume.pdf";
 
 
-
 const Services = () => {
-  // context
-  const theme = useContext(themeContext);
-  const darkMode = theme.state.darkMode;
 
   // transition
-  const transition = {
-    duration: 1,
-    type: "spring", stiffness: 50
-  };
+  const transition = { duration: 1, type: "spring", stiffness: 50};
 
   return (
     <div className="services" id="services">
@@ -26,7 +18,7 @@ const Services = () => {
         initial={{x: 200}}
         whileInView={{x: 0}}
         transition={transition}
-        style={{ color: darkMode ? "white" : "" }}>My Cutting-Edge</motion.span>
+        >My Cutting-Edge</motion.span>
         <motion.span
         initial={{ x: 200}}
         whileInView={{ x: 0}}

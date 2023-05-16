@@ -1,18 +1,15 @@
-import React, { useContext } from "react";
+import React  from "react";
 import "./Portfolio.css";
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css";
-import { motion, useSpring } from "framer-motion";
+import { motion } from "framer-motion";
 import MusicApp from "../../img/musicapp.png";
 import Website from "../../img/photoshop-website";
 import Formdesign from "../../img/formPage";
 import Design from "../../img/design";
-import { themeContext } from "../../Context";
 
 
 const Portfolio = () => {
-  const theme = useContext(themeContext);
-  const darkMode = theme.state.darkMode;
 
   return (
     <div className="portfolio" id="portfolio">
@@ -22,7 +19,7 @@ const Portfolio = () => {
         initial={{ x: -200}}
         whileInView={{ x: 0}}
         transition={{ duration: 1, type: "spring", stiffness: 50}}
-        style={{color: darkMode?'white': ''}}>Recent Collaborations:</motion.span>
+        >Recent Collaborations:</motion.span>
         <motion.span
          initial={{ x: -200}}
          whileInView={{ x: 0}}

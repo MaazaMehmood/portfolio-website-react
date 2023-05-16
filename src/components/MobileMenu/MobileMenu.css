@@ -41,6 +41,7 @@
 .n-list2 > ul li link{
     font-family: 'papyrus' ;
 }  
+
 .n-list2 > ul li:hover {
     color: #b055937e;
     cursor: pointer;

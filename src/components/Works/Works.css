@@ -8,7 +8,9 @@
   padding-bottom: 6rem;
   overflow: hidden;
   z-index: 1;
-  background:rgba(224, 224, 225, 0.74);
+  /* background:rgba(224, 224, 225, 0.74); */
+  background: url('../../img/portfolioBG.png');
+  opacity: .9;
 }
 
 .w-left{
@@ -19,12 +21,13 @@
 }
 
 .w-left > :nth-child(1) {
+  color: var(--blackBlue);
   font-size: 1.9rem;
   text-align: center;
 }
 
 .w-left > :nth-child(2) {
-  color: #07145add;
+  color: var(--blue);
   font-size: 2.4rem;
   font-weight: bold;
 }
@@ -45,7 +48,7 @@
   position: relative;
   border-radius: .3rem;
   border: transparent;
-  background: #f6f6f696;
+  background: #f6f6f6bd;
   box-shadow: var(--boxShadow);
   margin: 1.3rem;
   padding: 1rem;
@@ -55,6 +58,7 @@
   align-items: left;
   height: 47vh;
   width: 21vw;
+  
 }
 
 .div:hover {
@@ -86,7 +90,7 @@ p {
 
 a p {
   display: none;
-  color:#f5b157;
+  color: var(--yellow);
   z-index: 1;
   font-size: 2rem;
   margin-right: 1rem;
@@ -139,11 +143,6 @@ a p:hover {
     padding:0 ;
     gap: .1rem;
   }
-
-  .works::after{
-    display: none;
-  }
-
   .w-left{
     padding-top: 5rem;
     margin-right: 9rem;
@@ -152,12 +151,10 @@ a p:hover {
     justify-content: left;
     align-items: left;
   }
-
   .w-left > :nth-child(1) {
     text-align: left;
     color: black;
   }
-
   .w-right {
     margin-top: 0;
     padding: .5rem;
@@ -177,11 +174,9 @@ a p:hover {
   .w-left{
     margin-right: 2rem;
   }
-
   .w-right {
     left: 2%;
   }
-
   .div {
     width: 80%;
     height: 40vh;
