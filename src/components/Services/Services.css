@@ -8,7 +8,7 @@
   padding-top: 4rem;
   padding-bottom: 3rem;
   overflow: hidden;
-  background:#fff;
+  background: #fff;
 }
 
 /* left side */
@@ -42,18 +42,7 @@
 
 a{
   text-decoration: none;
-}
-
-.s-button {
-  width: 100%;
-  color:  var(--yellow);
-  margin-top: 1rem;
-  margin-left: .3rem;
-  font-family: 'papyrus';
-}
-
-.s-button:hover {
-  cursor: pointer;
+  margin-top: 2rem;
 }
 
 /* right sided */

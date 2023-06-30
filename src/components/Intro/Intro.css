@@ -3,7 +3,7 @@
   justify-content: space-around;
   height: 90vh;
   background-position: top center;
-  background-image: linear-gradient(to right,#012047,#020b3f,#9e3452f1,#fe346deb);
+  background-image: linear-gradient(to right,#010147,#020b3f,#9e3452f1,#fe346deb);
   position: relative;
   z-index: 0;
   overflow: hidden;
@@ -74,17 +74,6 @@
   white-space: wrap;
 }
 
-.i-button {
-  width: 45%;
-  color:  var(--yellow);
-  margin-top: 1rem;
-  font-family: 'papyrus' ;
-}
-
-.i-button:hover {
-  cursor: pointer;
-}
-
 .i-icons {
   margin-top: .3rem;
   margin-left: .5rem;
@@ -153,3 +142,4 @@
   from { opacity: 0 }
   to { opacity: 1 }
 }
+

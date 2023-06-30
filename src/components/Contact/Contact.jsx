@@ -46,7 +46,7 @@ const Contact = () => {
           >Reach Out to Me and Get Started..</motion.span>
           <div className="connect">
             <FaMailBulk className='ico' /> 
-            <p>maazamehmood24@gmail.com</p>
+            <p>maazamehmood831@gmail.com</p>
           </div>
           <div className="connect">
             <FaPhoneAlt className="ico"/> 
@@ -61,11 +61,17 @@ const Contact = () => {
           <input type="text" name="user_name" className="user"  placeholder="Name"/>
           <input type="email" name="user_email" className="user" placeholder="Email"/>
           <textarea name="message" className="user" placeholder="Message"/>
-          <motion.input type="submit" value="_____________Send" className="c-button" 
-          initial={{x: '-100vw'}}
-          animate={{x: -90}}
-          transition={{duration: 1, type: "spring", stiffness: 50}}
-          whileHover={{scale: 1.1}}/>
+          <button>
+            <div className="svg-wrapper-1">
+              <div className="svg-wrapper">
+                <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z" fill="currentColor"></path>
+                </svg>
+              </div>
+            </div>
+            <span>Send</span>
+          </button>
           <span>{done && "Thanks for Contacting me"}</span>
         </form>
       </div>

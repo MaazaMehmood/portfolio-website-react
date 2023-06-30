@@ -3,7 +3,7 @@ import "./Card.css";
 
 const Card = ({heading, detail, color}) => {
   return (
-    <div className="card" style={{borderColor: {color}}}> 
+    <div className="card-service" style={{borderColor: {color}}}> 
       <span>{heading}</span>
       <span>{detail}</span>
     </div>

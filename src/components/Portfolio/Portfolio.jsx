@@ -28,7 +28,7 @@ const Portfolio = () => {
       </div>
 
       {/* slider */}
-      <Swiper
+      {/* <Swiper
         spaceBetween={9}
         slidesPerView={1}
         grabCursor={true}
@@ -46,7 +46,18 @@ const Portfolio = () => {
         <SwiperSlide>
           <img src={Design} alt="" />
         </SwiperSlide>
-      </Swiper>
+      </Swiper> */}
+      <div class="card">
+          <p><span><a herf="#"><img src={Formdesign} alt="form-design" /></a></span></p>
+          <p><span><a><img src={Website} alt="portfolio-website" /></a></span></p>
+          <p><span><a><img src={MusicApp} alt="music-app" /></a></span></p>
+          <p><span><a><img src={Design} alt="ecommerce-website" /></a></span></p>
+          {/* <p><span><img src={Formdesign} alt="form-design" /></span></p>
+          <p><span><img src={Website} alt="portfolio-website" /></span></p>
+          <p><span><img src={MusicApp} alt="music-app" /></span></p>
+          <p><span><img src={Design} alt="ecommerce-website" /></span></p> */}
+      </div>
+     
     </div>
   );
 };

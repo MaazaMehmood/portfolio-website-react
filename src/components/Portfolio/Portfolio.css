@@ -15,6 +15,7 @@
   margin-left: 5rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .portfolio-head span:nth-of-type(1) {
@@ -26,10 +27,79 @@
   color: var(--blue);
   font-size: 2.4rem;
   font-weight: bold;
+  white-space: wrap;
+}
+
+.card {
+  width: 400px;
+  height: 260px;
+  border-radius: 4px;
+  background: transparent;
+  display: flex;
+  gap: 5px;
+  padding: .4em;
+  margin-right: 5rem;
+}
+
+.card p {
+  width: 100%;
+  height: 100%;
+  flex: 2;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all .5s;
+  background: transparent;
+  border: 1px solid #9e3452f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card p:hover {
+  border: none;
+  flex: 8;
+}
+
+.card p span {
+  min-width: 15em;
+  padding: .5em;
+  text-align: center;
+  transform: rotate(-90deg);
+  transition: all .5s;
+  /* text-transform: uppercase; */
+  color: #ff568e;
+  /* letter-spacing: .1em; */
+}
+
+/* .card p span::before{
+  content: 'hover';
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: #ff568e;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  height: 100%;
+  width: 100%;
+  background: rgba(40, 40, 40, 0.852);
+  opacity: 0.8;
+  z-index: 1;
+  text-align: center;
+  padding-top: 5rem;
+  padding-right: 50%;
+} */
+
+.card p:hover span {
+  transform: rotate(0);
+}
+
+.card p:hover span::before {
+  z-index: -2;
 }
 
 /* slider */
-.portfolio .swiper{
+/* .portfolio .swiper{
     overflow: hidden;
     margin-right: 2rem;
     z-index: 0;
@@ -51,13 +121,20 @@
   align-items: center;
   width: 5rem;
   padding: 1rem;
-}
+} */
 
 .portfolio img {
-  width: 15rem;
-  height: 11rem;
-  filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.325));
-  border-radius: .5rem;
+  width: 100%;
+  height: 100%;
+  /* filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.325)); */
+  border-radius: 2rem;
+}
+
+@media screen and (max-width:1000px){
+  .card{
+    margin-right: 2rem;
+    margin-left: .5rem;
+  }
 }
 
 
@@ -75,7 +152,8 @@
   .portfolio-head {
     margin-left: 1rem;
   }
-  .portfolio .swiper{
+ 
+  /* .portfolio .swiper{
     margin-right: 7rem;
     align-items: center;
   }
@@ -86,7 +164,7 @@
     height: 70vh;
     left: 5rem;
     right: 8rem;
-  }
+  } */
 }
 
 @media screen and (max-width: 700px) {
@@ -99,12 +177,17 @@
   .portfolio-head {
     margin-left: 2rem;
   }
-  .portfolio .swiper{
+  .card{
+    margin-right: 0;
+    margin-left: 0;
+  }
+  /* .portfolio .swiper{
     margin-right: 9rem;
     align-items: center;
   }
   .portfolio-slider {
     left: 2.5rem;
 
-  }
+  } */
 }
+

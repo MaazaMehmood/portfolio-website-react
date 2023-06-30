@@ -4,8 +4,8 @@
   align-items: center;
   position: relative;
   padding: .5rem;
-  height: 50vh;
-  background-image: linear-gradient(to right, #012452,#030f53,#9e3452ed,#f40d4ed8);
+  height: 40vh;
+  background-image: linear-gradient(to right, #010147,#030f53,#9e3452ed,#f40d4ed8);
 }
 
 .footer::after{
@@ -27,12 +27,13 @@
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
   gap: 2rem;
-  color: white;
+
 }
 
 .f-content span {
+  color: white;
   z-index: 2;
   font-size: .8rem;
 }
@@ -54,6 +55,7 @@
   }
   
   .f-content span {
+    color: white;
     z-index: 2;
   }
   

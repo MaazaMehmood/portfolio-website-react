@@ -3,6 +3,7 @@ import "./Services.css";
 import Card from "../Card/Card";
 import { motion } from "framer-motion";
 import Resume from "./resume.pdf";
+import { FaDownload } from "react-icons/fa";
 
 
 const Services = () => {
@@ -29,14 +30,14 @@ const Services = () => {
           ispum is simpley dummy text of printing
         </span>
         <a href={Resume} download>
-          <motion.div className="button s-button"
-           initial={{x: '100vw'}}
-           animate={{x: 190}}
-           transition={transition}
-           whileHover={{scale: 1.1}}
-          >
-            Resume________________
-          </motion.div>
+          <button>
+            <div className="svg-wrapper-1">
+              <div className="svg-wrapper">
+                <FaDownload/>
+              </div>
+            </div>
+            <span>Resume</span>
+          </button>
         </a>
       </div>
 

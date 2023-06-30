@@ -46,50 +46,70 @@ const Works = () => {
         initial="hidden"
         whileInView="visible">
 
-        <motion.div className="div"
+        <motion.div className="work-card"
           variants={item}>
-          <h2>company 1</h2>
-          <FaLaptop style={{height:'1.6rem', width:'1.6rem', color:'#9a095d7a', marginBottom:'.3rem'}}/>
-          <div className="desc">
-            <p>Lorem ispum is simpley dummy text of printing of printing Lorem 
-              ispum is simpley dummy text of printing of printing Lorem</p>
-            <a><p>reviews</p></a>
+          <div className="work-content">
+            <p className="work-heading">Card Hover Effect</p>
+            <FaLaptop style={{height:'1.6rem', width:'1.6rem', color:'#9e3452ad', marginBottom:'.3rem'}}/>
+            <p className="para">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi
+              laboriosam at voluptas minus culpa deserunt delectus sapiente
+              inventore pariatur
+            </p>
+            <button className="work-btn">Read more</button>
+          </div>
+          {/* </div> */}
+        </motion.div>
+        <motion.div className="work-card"
+          variants={item}>
+          <div className="work-content">
+            <p className="work-heading">Card Hover Effect</p>
+            <FaLaptopHouse style={{height:'1.6rem', width:'1.6rem', color:'#9e3452ad', marginBottom:'.3rem'}}/>
+            <p className="para">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi
+              laboriosam at voluptas minus culpa deserunt delectus sapiente
+              inventore pariatur
+            </p>
+            <button className="work-btn">Read more</button>
           </div>
         </motion.div>
-        <motion.div className="div"
+        <motion.div className="work-card"
           variants={item}>
-          <h2>company 2</h2>
-          <FaLaptopHouse style={{height:'1.6rem', width:'1.6rem', color:'#9a095d7a', marginBottom:'.3rem'}}/>
-          <div className="desc">
-            <p>Lorem ispum is simpley dummy text of printing of printing dvvdfgfbdf fd fdfgdLorem jvjs ldjvsdvd  dvvdfgfbdf fd fdfgdLorem </p>
-            <a><p>certificate</p></a>
+          <div className="work-content">
+            <p className="work-heading">Card Hover Effect</p>
+            <FaBriefcase style={{height:'1.6rem', width:'1.6rem', color:'#9e3452ad', marginBottom:'.3rem'}}/>
+            <p className="para">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi
+              laboriosam at voluptas minus culpa deserunt delectus sapiente
+              inventore pariatur
+            </p>
+            <button className="work-btn">Read more</button>
           </div>
         </motion.div>
-        <motion.div className="div"
+        <motion.div className="work-card"
           variants={item}>
-          <h2>company 3</h2>
-          <FaBriefcase style={{height:'1.6rem', width:'1.6rem', color:'#9a095d7a', marginBottom:'.3rem'}}/>
-          <div className="desc">
-            <p>Lorem ispum is simpley dummy text of printing of printing Loremnd kvnj dvdkvnkdsj</p>
-            <a><p>reviews</p></a>
+          <div className="work-content">
+            <p className="work-heading">Card Hover Effect</p>
+            <FaLaptopCode style={{height:'1.6rem', width:'1.6rem', color:'#9e3452ad', marginBottom:'.3rem'}}/>
+            <p className="para">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi
+              laboriosam at voluptas minus culpa deserunt delectus sapiente
+              inventore pariatur
+            </p>
+            <button className="work-btn">Read more</button>
           </div>
         </motion.div>
-        <motion.div className="div"
+        <motion.div className="work-card"
           variants={item}>
-          <h2>company 4</h2>
-          <FaLaptopCode style={{height:'1.6rem', width:'1.6rem', color:'#9a095d7a', marginBottom:'.3rem'}}/>
-          <div className="desc">
-            <p>Lorem ispum is simpley dummy text of printing of printing Lorem asjkasf</p>
-            <a><p>certificate</p></a>
-          </div>
-        </motion.div>
-        <motion.div className="div"
-          variants={item}>
-          <h2>company 5</h2>
-          <FaDatabase style={{height:'1.6rem', width:'1.6rem', color:'#9a095d7a', marginBottom:'.3rem'}}/>
-          <div className="desc">
-            <p>Lorem ispum is simpley dummy text of printing of printing Lorem asjkasf</p>
-            <a><p>certificate</p></a>
+          <div className="work-content">
+            <p className="work-heading">Card Hover Effect</p>
+            <FaDatabase style={{height:'1.6rem', width:'1.6rem', color:'#9e3452ad', marginBottom:'.3rem'}}/>
+            <p className="para">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi
+              laboriosam at voluptas minus culpa deserunt delectus sapiente
+              inventore pariatur
+            </p>
+            <button className="work-btn">Read more</button>
           </div>
         </motion.div>
         

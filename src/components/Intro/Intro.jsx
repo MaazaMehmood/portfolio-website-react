@@ -1,6 +1,6 @@
 import React from "react";
 import "./Intro.css";
-import { FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaGithub, FaHighlighter, FaConnectdevelop, FaJoint, FaLink } from 'react-icons/fa';
 import { motion, useTransform, useViewportScroll } from "framer-motion";
 import { Link } from "react-scroll";
 
@@ -31,13 +31,14 @@ const Intro = () => {
         </div>
         <div>
           <Link to="contact" smooth={true} spy={true}>
-            <motion.div className="i-button"
-            initial={{x: '-100vw'}}
-            animate={{x: -80}}
-            transition={transition}
-            whileHover={{scale: 1.1}}
-            >_____________HireMe
-            </motion.div>
+          <button>
+            <div className="svg-wrapper-1">
+              <div className="svg-wrapper">
+                <FaLink/>
+              </div>
+            </div>
+            <span>Hire Me</span>
+          </button>
           </Link>
         </div>
         {/* social icons */}
