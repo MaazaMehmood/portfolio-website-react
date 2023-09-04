@@ -25,9 +25,9 @@ const Services = () => {
         whileInView={{ x: 0}}
         transition={{ duration: 2, type: "spring", stiffness: 50}}>Services Offering</motion.span>
         <span>
-          Lorem ipsum is simpley dummy text of printing of printing Lorem
-          <br />
-          ispum is simpley dummy text of printing
+        Dynamic and interactive web and app services using React and React native. 
+        <br />
+        harnessing the power of this cutting-edge JavaScript library to create seamless user experiences.
         </span>
         <a href={Resume} download>
           <button>
@@ -50,8 +50,8 @@ const Services = () => {
           transition={transition}
         >
           <Card
-            heading={"Design"}
-            detail={"Figma, Sketch, Photoshop, Adobe Illustrator, Adobe xd"}
+            heading={"UI/UX"}
+            detail={"Figma, Design and Develop "}
           />
         </motion.div>
         {/* second card */}
@@ -72,9 +72,9 @@ const Services = () => {
           transition={transition}
         >
           <Card
-            heading={"UI/UX"}
+            heading={"MobApp"}
             detail={
-              "Lorem ispum dummy text are usually use in section where we need some random text"
+              "React Native cross-platform mobile applications that work seamlessly on both iOS and Android devices."
             }
             color="rgba(252, 166, 31, 0.45)"
           />

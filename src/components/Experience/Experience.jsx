@@ -14,7 +14,7 @@ const Experience = () => {
     <div className="experience" id='experience'>
       <div className="achievement">
         <motion.div 
-        initial={{ left: "-8rem" }}
+        initial={{ left: "-9rem" }}
         whileInView={{ left: "0rem" }}
         transition={{duration: 1, type: "spring", stiffness: 50}}
         style={{ scale }}
@@ -36,7 +36,7 @@ const Experience = () => {
       </div>
       <div className="achievement">
         <motion.div
-        initial={{ right: "-8rem" }}
+        initial={{ right: "-6rem" }}
         whileInView={{ right: "0rem" }}
         transition={{duration: 1,  type: "spring", stiffness: 50}}
         className="circle" style={{scale}}><h3>2+</h3><FaWarehouse style={{height:'1.6rem', width:'1.6rem', color:'#9a095d7a', marginBottom:'.3rem'}}/>

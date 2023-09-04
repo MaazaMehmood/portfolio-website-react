@@ -5,8 +5,8 @@
   height: 90vh;
   padding-top: 1rem;
   margin-top: 1rem;
-  background: url('../../img/sliderkeyboard.jpg');
-  /* background:rgba(224, 224, 225, 0.74); */
+  /* background: url('../../img/sliderkeyboard.jpg'); */
+  background:rgba(224, 224, 225, 0.74);
   z-index: -1;
 }
 

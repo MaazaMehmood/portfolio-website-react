@@ -47,7 +47,7 @@ const Portfolio = () => {
           <img src={Design} alt="" />
         </SwiperSlide>
       </Swiper> */}
-      <div class="card">
+      <div className="card">
           <p><span><a herf="#"><img src={Formdesign} alt="form-design" /></a></span></p>
           <p><span><a><img src={Website} alt="portfolio-website" /></a></span></p>
           <p><span><a><img src={MusicApp} alt="music-app" /></a></span></p>

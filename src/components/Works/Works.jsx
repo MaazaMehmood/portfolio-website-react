@@ -46,47 +46,47 @@ const Works = () => {
         initial="hidden"
         whileInView="visible">
 
-        <motion.div className="work-card"
+        <motion.div className="cookieCard"
           variants={item}>
-          <div className="work-content">
-            <p className="work-heading">Card Hover Effect</p>
-            <FaLaptop style={{height:'1.6rem', width:'1.6rem', color:'#9e3452ad', marginBottom:'.3rem'}}/>
-            <p className="para">
+          <div className="">
+            <p className="cookieHeading">Company</p>
+            <FaLaptop style={{height:'1.3rem', width:'1.6rem', color:'#8b446b9e', marginBottom:'.3rem'}}/>
+            <p className="cookieDescription">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi
               laboriosam at voluptas minus culpa deserunt delectus sapiente
               inventore pariatur
             </p>
-            <button className="work-btn">Read more</button>
+            <button className="acceptButton">Read more</button>
           </div>
           {/* </div> */}
         </motion.div>
-        <motion.div className="work-card"
+        <motion.div className="cookieCard"
           variants={item}>
-          <div className="work-content">
-            <p className="work-heading">Card Hover Effect</p>
-            <FaLaptopHouse style={{height:'1.6rem', width:'1.6rem', color:'#9e3452ad', marginBottom:'.3rem'}}/>
-            <p className="para">
+          <div className="">
+            <p className="cookieHeading">Company</p>
+            <FaLaptopHouse style={{height:'1.3rem', width:'1.6rem', color:'#8b446b9e', marginBottom:'.3rem'}}/>
+            <p className="cookieDescription">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi
               laboriosam at voluptas minus culpa deserunt delectus sapiente
               inventore pariatur
             </p>
-            <button className="work-btn">Read more</button>
+            <button className="acceptButton">Read more</button>
           </div>
         </motion.div>
-        <motion.div className="work-card"
+        <motion.div className="cookieCard"
           variants={item}>
-          <div className="work-content">
-            <p className="work-heading">Card Hover Effect</p>
-            <FaBriefcase style={{height:'1.6rem', width:'1.6rem', color:'#9e3452ad', marginBottom:'.3rem'}}/>
-            <p className="para">
+          <div className="">
+            <p className="cookieHeading">Company</p>
+            <FaBriefcase style={{height:'1.3rem', width:'1.6rem', color:'#8b446b9e', marginBottom:'.3rem'}}/>
+            <p className="cookieDescription">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi
               laboriosam at voluptas minus culpa deserunt delectus sapiente
               inventore pariatur
             </p>
-            <button className="work-btn">Read more</button>
+            <button className="acceptButton">Read more</button>
           </div>
         </motion.div>
-        <motion.div className="work-card"
+        {/* <motion.div className="work-card"
           variants={item}>
           <div className="work-content">
             <p className="work-heading">Card Hover Effect</p>
@@ -111,7 +111,7 @@ const Works = () => {
             </p>
             <button className="work-btn">Read more</button>
           </div>
-        </motion.div>
+        </motion.div> */}
         
       </motion.div>
     </div>

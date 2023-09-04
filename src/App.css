@@ -1,11 +1,11 @@
 :root
 {
-  --blue : #130852;
-  --blackBlue : #1b2236;
+  --blue : #31012d;
+  --blackBlue : #1e1b36;
   --gray : #7b7c7c;
   --pinkCard : #ffb0d79a;
   --yellow: #f9b863e3;
-  --boxShadow : 0px 19px 60px rgba(37, 36, 36, 0.39);
+  --boxShadow : 0px 19px 60px rgba(123, 123, 123, 0.39);
   --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
 }
 

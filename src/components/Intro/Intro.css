@@ -3,7 +3,7 @@
   justify-content: space-around;
   height: 90vh;
   background-position: top center;
-  background-image: linear-gradient(to right,#010147,#020b3f,#9e3452f1,#fe346deb);
+  background-image: linear-gradient(to right,#3a0543,#42033d,#500440ee,#8b446b);
   position: relative;
   z-index: 0;
   overflow: hidden;
@@ -16,7 +16,7 @@
   top: 0;
   height: 100%;
   width: 100%;
-  background: rgba(40, 40, 40, 0.852);
+  background: rgba(40, 40, 40, 0.575);
   opacity: 0.4;
   z-index: -1;
 }
@@ -51,7 +51,7 @@
   opacity: 0;
   color:white;
   font-weight: bold;
-  font-family: 'Courier New';
+  /* font-family: 'Courier New'; */
   font-size: 1rem;
 }
 .i-name > :nth-child(2) {
